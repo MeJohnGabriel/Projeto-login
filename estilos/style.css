@@ -19,7 +19,7 @@ FOLLOW IMAGE
 
 body,
 html {
-  background-color: #0f4957;
+  background-color: #4c7a89;
   color: black;
   height: 100vh;
   width: 100vw;
@@ -37,27 +37,130 @@ section#login {
   top: 50%;
   left: 50%;
   overflow: hidden;
-  transform: translate(-50%, -50%);
 
   background-color: white;
-  width: 250px;
-  height: 500px;
+  width: 270px;
+  height: 515px;
   border-radius: 25px;
-  box-shadow: 1px 1px 8px rgba(255, 255, 255, 0.548);
+  box-shadow: 0px 1px 20px 5px rgba(255, 255, 255, 0.548);
   transition: width 0.4s, height 0.4s;
   /* suavizar animacao */
   transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 }
 
 section#login > div#image {
   display: block;
   background: url(../images/hospital.jpg) no-repeat;
   background-size: cover;
-  height: 200px;
+  height: 190px;
   /* border-radius: 25px 25px 0px 0px; */
 }
 
 section#login div#forms {
   display: block;
   padding: 10px;
+}
+
+div#forms > h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #0f4957;
+  /* text-shadow: 2px 1px 1px #00000063; */
+  font-weight: bolder;
+}
+
+div#forms > p {
+  font-size: 1em;
+  padding: 0px 5px 0px 5px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+form > div.field {
+  font-size: 15px;
+  color: #db2525;
+  display: block;
+  background-color: #2e839f;
+  border-radius: 5px;
+  border: 2px solid#2e839f;
+  width: 100%;
+  height: 40px;
+  margin: 5px 0px;
+}
+
+div.field > input {
+  background-color: #5193a3;
+  font-size: 1em;
+  border-radius: 8px;
+  height: 100%;
+  padding: 4px;
+  border: 0px;
+  width: calc(100% - 44.5px);
+  /* faca transforms sempre na ultima linha */
+  transform: translateY(-11px);
+}
+
+div.field > input:focus-within {
+  background-color: white;
+}
+
+div.field > span {
+  color: white;
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+}
+
+#iLogin::-webkit-input-placeholder {
+  color: white;
+}
+
+#iPassword::-webkit-input-placeholder {
+  color: white;
+}
+
+form > input[type="submit"] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  margin-top: 10px;
+  height: 40px;
+  background-color: #4c7a89;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+form > input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #0f4957;
+}
+
+form > a.btt {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  padding-top: 8px;
+  background-color: #ffffff82;
+  border-radius: 5px;
+  border: 1px solid #0f4957;
+  color: #4c7a89;
+
+  text-decoration: none;
+  margin-top: 5px;
+  transition: 0.4s;
+}
+
+form > a.btt:hover {
+  background-color: #0f4957;
+  color: white;
+}
+
+form > a.btt > span {
+  font-size: 0.8em;
+  margin-left: 2px;
 }

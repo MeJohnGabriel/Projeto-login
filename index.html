@@ -6,6 +6,10 @@
     <title>Projeto Login</title>
     <link rel="stylesheet" href="estilos/style.css" />
     <link rel="stylesheet" href="estilos/media-query.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -13,8 +17,42 @@
         <div id="image"></div>
         <div id="forms">
           <h1>Login</h1>
-          <p>Welcome!</p>
-          <form action="login.js" method="post"></form>
+          <p>
+            Seja bem-vindo(a). Preencha seus dados para consultas, exames e
+            outros serviços.
+          </p>
+          <form action="login.js" method="post" autocomplete="off">
+            <div class="field">
+              <span class="material-icons">person</span>
+              <input
+                type="email"
+                name="email"
+                id="iLogin"
+                placeholder="E-mail"
+                required
+                maxlength="30"
+              />
+              <label for="iLogin"></label>
+            </div>
+            <div class="field">
+              <span class="material-icons">lock</span>
+              <input
+                type="password"
+                name="password"
+                id="iPassword"
+                placeholder="Senha"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="20"
+              />
+              <label for="iPassword"></label>
+            </div>
+            <input type="submit" value="Entrar" />
+            <a href="#" class="btt"
+              >Esqueci a senha<span class="material-icons">email</span></a
+            >
+          </form>
         </div>
       </section>
     </main>

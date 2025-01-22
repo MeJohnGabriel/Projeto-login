@@ -13,10 +13,11 @@ Tvs: above 1200px
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body {
-    background-image: linear-gradient(to top, #1b5b6a, #4c7a89);
+    background-image: linear-gradient(to top, #014751, #4c7a89);
   }
   section#login {
-    width: 90vw;
+    width: 85vw;
+    height: 350px;
   }
   section#login > div#image {
     float: left;
@@ -28,25 +29,50 @@ Tvs: above 1200px
     float: right;
     width: 70%;
   }
+  div#forms > h1 {
+    font-size: 2.4em;
+  }
+  div#forms > p {
+    font-size: 1.2em;
+    padding: 0px 20px 0px 20px;
+  }
 }
 
 /* telas grandes */
 @media screen and (min-width: 992px) {
   body {
-    background-image: linear-gradient(to top, #1b5b6a, #4c7a89);
+    background-image: linear-gradient(to top, #014751, #4c7a89);
   }
   section#login {
     width: 950px;
+    height: 410px;
   }
 
   section#login > div#image {
-    float: left;
+    float: right;
     width: 50%;
     height: 100%;
   }
 
+  div#forms > p {
+    margin-bottom: 40px;
+  }
+
   section#login > div#forms {
-    float: right;
+    float: left;
     width: 50%;
+  }
+
+  div#forms > h1 {
+    font-size: 3em;
+  }
+
+  div#forms > p {
+    font-size: 1.2em;
+    padding: 0px 20px 0px 20px;
+  }
+
+  form > input[type="submit"] {
+    margin-top: 50px;
   }
 }
