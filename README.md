@@ -1,5 +1,5 @@
 # Projeto-login
 
-Projeto de tela de login responsiva
+Projeto da tela de login responsiva
 
-[BUG- DO PAGES]: Não carrega o CSS todo.
+LINK: <a target= "_blank" href="https://mejohngabriel.github.io/Projeto-login/">https://mejohngabriel.github.io/Projeto-login/</a>
