@@ -11,7 +11,7 @@ Tvs: above 1200px
 */
 
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 700px) and (max-width: 992px) {
   body {
     background-image: linear-gradient(to top, #014751, #4c7a89);
   }
@@ -41,7 +41,7 @@ Tvs: above 1200px
 /* telas grandes */
 @media screen and (min-width: 992px) {
   body {
-    background-image: linear-gradient(to top, #014751, #4c7a89);
+    background-image: linear-gradient(to bottom, #014751, #75a8b9);
   }
   section#login {
     width: 950px;

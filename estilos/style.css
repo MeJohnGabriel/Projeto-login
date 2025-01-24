@@ -42,7 +42,7 @@ section#login {
   width: 270px;
   height: 515px;
   border-radius: 25px;
-  box-shadow: 0px 1px 20px 5px rgba(255, 255, 255, 0.548);
+  box-shadow: 0px 1px 20px 5px rgba(0, 0, 0, 0.548);
   transition: width 0.4s, height 0.4s;
   /* suavizar animacao */
   transition-timing-function: ease;
@@ -65,7 +65,7 @@ section#login div#forms {
 div#forms > h1 {
   text-align: center;
   margin-bottom: 10px;
-  color: #0f4957;
+  color: #659aaa;
   /* text-shadow: 2px 1px 1px #00000063; */
   font-weight: bolder;
 }
@@ -75,6 +75,7 @@ div#forms > p {
   padding: 0px 5px 0px 5px;
   text-align: justify;
   margin-bottom: 10px;
+  font-family: monospace;
 }
 
 form > div.field {
@@ -113,11 +114,13 @@ div.field > span {
 }
 
 #iLogin::-webkit-input-placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.709);
+  font-style: italic;
 }
 
 #iPassword::-webkit-input-placeholder {
-  color: white;
+  color: rgba(255, 255, 255, 0.709);
+  font-style: italic;
 }
 
 form > input[type="submit"] {
